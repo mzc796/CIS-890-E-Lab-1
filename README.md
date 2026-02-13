@@ -30,7 +30,7 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
    pingall
    ```
-   (3) Observe the result and find the reasons:
+   (3) In another system terminal, we check the flow entries of each switch (e.g., s1). Observe the result and find the reasons:
    ```
    sudo ovs-ofctl -O OpenFlow13 dump-flows s1
    ```

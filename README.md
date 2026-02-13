@@ -23,6 +23,7 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
   sudo apt-get install wireshark
   ```
 2. Play mininet with 1-switch topology
+   
    (1) Run mininet with the default topology in the system terminal:
    ```
    sudo mn

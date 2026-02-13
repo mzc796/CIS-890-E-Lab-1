@@ -34,8 +34,11 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
    sudo ovs-ofctl -O OpenFlow13 dump-flows s1
    ```
-   (4) Describe what you observe and why
-3. Play mininet with preconfigured topology
+   (4) Install wireshark to capture packets. Describe what you observe and why
+   ```
+   sudo apt-get install wireshark
+   ```
+4. Play mininet with preconfigured topology
    (1)
    ```
    sudo mn --topo tree,depth=3,fanout=2
@@ -48,7 +51,7 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
    sudo ovs-ofctl -O OpenFlow13 dump-flows s1
    ```
-4. Play mininet with customized topology
+5. Play mininet with customized topology
    ```
    mkdir lab-1
    cd lab-1

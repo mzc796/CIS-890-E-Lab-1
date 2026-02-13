@@ -58,7 +58,7 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
    h1 arp
    ```
-   Keep in mind what you observe.
+   Keep in mind what you have observed.
    
    (4) In the mininet terminal:
    ```

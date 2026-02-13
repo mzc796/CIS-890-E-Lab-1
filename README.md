@@ -36,11 +36,13 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    sudo ovs-ofctl -O OpenFlow13 dump-flows s1
    ```
    (4) Describe what you observe and why?
+   
    (5) Stop mininet. In the mininet terminal:
    ```
    exit
    ```
 4. Play mininet with preconfigured topology
+   
    (1) Run mininet with a tree topology
    ```
    sudo mn --topo tree,depth=3,fanout=2
@@ -49,15 +51,23 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
    sudo wireshark
    ```
-   (3) In the mininet terminal:
+   (3) Check ARP table on each host. On the mininet terminal:
+   ```
+   h1 arp
+   ```
+   Keep in mind what you observe.
+   
+   (4) In the mininet terminal:
    ```
    pingall
    ```
-   (4) Observe the result and find the reasons by checking flow entries on switches:
+   (5) Check ARP table on each host again. In the mininet termianl
    ```
-   sudo ovs-ofctl -O OpenFlow13 dump-flows s1
+   h1 arp
    ```
-   (5) Question: When we do "ping", what packets have been exchanged in a sequence? Why?
+   What do you find?
+   (6) Question: When we do "ping", what packets have been exchanged in a sequence? Why?
+   
 6. Play mininet with customized topology
    ```
    mkdir lab-1

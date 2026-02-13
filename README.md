@@ -1,4 +1,4 @@
-# CIS-890-E-Lab-1
+# SDN-Lab-1
 Be familiar with Mininet
 ## Virtual Machine Summary
 Memory: >= 8GB

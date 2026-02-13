@@ -120,7 +120,5 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    Question: Why do you think the `ping` doesn't work this time?
    
    (4) Make ```h1 ping h2``` work
-   
-   [reference](https://mininet.org/walkthrough/)
 
    Hint: Refer to the bash scripts of `icmp.sh` and `arp.sh` in this repository.

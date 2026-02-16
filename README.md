@@ -79,8 +79,8 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    
 4. Manually configure flow entries to make `ping` work
    ```
-   mkdir lab-1
-   cd lab-1
+   mkdir custom_mn
+   cd custom_mn
    ```
 > (1) Customize your topology, create a file named "topo-2sw-2host.py", and copy the code below into the file.
    ```
@@ -105,7 +105,7 @@ Installation Disc: [ubuntu-22.04.4-desktop-amd64.iso](https://old-releases.ubunt
    ```
 > (2) Run mininet with the customized topology. In a system terminal:
    ```
-   sudo mn --custom ~/lab-1/topo-2sw-2host.py --topo mytopo --switch ovsk,protocols=OpenFlow13 --controller remote,ip=127.0.0.1,port=6653
+   sudo mn --custom ~/custom_mn/topo-2sw-2host.py --topo mytopo --switch ovsk,protocols=OpenFlow13 --controller remote,ip=127.0.0.1,port=6653
    ```
 > (3) In the mininet terminal:
    ```
